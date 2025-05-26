@@ -44,10 +44,10 @@ public class Evidencia2POO {
             while (true) {
                 System.out.print("Nombre: ");
                 nombre = scanner.nextLine().trim();
-                if (!nombre.isEmpty()) {
+                if (!nombre.isEmpty() && nombre.matches("^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$")) {
                     break;
                 } else {
-                    System.out.println("El nombre no puede estar vacío. Intente nuevamente.");
+                    System.out.println("Entrada inválida. Ingrese solo su nombre real (letras y espacios entre palabras, sin números ni símbolos).");
                 }
             }
 
@@ -55,7 +55,7 @@ public class Evidencia2POO {
             while (true) {
                 System.out.print("Apellido: ");
                 apellido = scanner.nextLine().trim();
-                if (!apellido.isEmpty()) {
+                if (!apellido.isEmpty() && apellido.matches("^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$")) {
                     break;
                 } else {
                     System.out.println("El apellido no puede estar vacío. Intente nuevamente.");
