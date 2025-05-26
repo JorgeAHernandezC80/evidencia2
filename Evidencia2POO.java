@@ -58,7 +58,7 @@ public class Evidencia2POO {
                 if (!apellido.isEmpty() && apellido.matches("^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$")) {
                     break;
                 } else {
-                    System.out.println("El apellido no puede estar vacío. Intente nuevamente.");
+                    System.out.println("Entrada inválida. Ingrese solo su apellido real (letras y espacios entre palabras, sin números ni símbolos).");
                 }
             }
 
